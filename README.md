@@ -1,4 +1,4 @@
-# Molecualr profile prediction in colon cancer
+# Overview of Molecualr profile prediction in colon cancer
 
 The code in this repository is confidential and for review purpose only.
 
@@ -45,16 +45,16 @@ Download corresponding omics data (gene mutation, cna, expression) from cBioPort
 
 Using the code under `1. Data_preprocessing` to perform
 
-## Data processing steps
+#### Data processing steps
 
 
-## 1. Patch generation and molecular profile label preparation. 
+#### 1. Patch generation and molecular profile label preparation. 
 * Get gene mutation, CNA, MSI, and protein information of selected slides
     ```
     python 1-1.prepare_molecular_label.py
     ```
  
-## 2. Patch extraction and selection
+#### 2. Patch extraction and selection
 * Extract patches
     ```
     python 2-1.segment_tiles.py
@@ -68,7 +68,7 @@ Using the code under `1. Data_preprocessing` to perform
     python 2-3.tumor_prediction.py
     ```
 
-## 3. Color norm and feature extraction
+#### 3. Color norm and feature extraction
 * Color normalization
     ``` 
     python 3-1.tile_normalization.py
@@ -78,7 +78,7 @@ Using the code under `1. Data_preprocessing` to perform
     python 3-2.feature_extraction.py
     ```
     
-## 4. Graph construction
+#### 4. Graph construction
 * Generate adjacency matrix infomation (construct graph edge). For each node, we save its connected neighbor nodes.
     ``` 
     python 4-1.generate_adj_similar.py
@@ -97,4 +97,3 @@ Using the code under `2. Prediction_on_TCGA_dataset`
 
 Using the code under `3. Validation_on_CPTAC_dataset` 
 
-```
