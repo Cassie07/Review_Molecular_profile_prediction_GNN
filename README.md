@@ -84,7 +84,6 @@ Using the code under `1. Data_preprocessing` to perform
     python 4-1.generate_adj_similar.py
     ```
 
-```
 
 
 
@@ -97,3 +96,5 @@ Using the code under `2. Prediction_on_TCGA_dataset`
 ### Step 4. Model validation for molecular profile prediction on CPTAC-COAD
 
 Using the code under `3. Validation_on_CPTAC_dataset` 
+
+```
