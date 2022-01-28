@@ -32,14 +32,14 @@ Pillow 6.2.0
 
 h5py 2.8.0
 
-
-## Usage
-
-### Data download
+## Data download
 
 Download the FFPE whole slide images from GDC portal (https://portal.gdc.cancer.gov/) for colon adenocarcinoma (TCGA-COAD), rectum adenocarcinoma (TCGA-READ), and CANCER portal (https://wiki.cancerimagingarchive.net/display/Public/CPTAC-COAD) colon adenocarcinomacolon adenocarcinoma (CPTAC-COAD).
 
 Download corresponding omics data (gene mutation, cna, expression) from cBioPortal (https://www.cbioportal.org/) for each dataset.
+
+
+## Usage
 
 ### Step 1. Data preprocessing
 
