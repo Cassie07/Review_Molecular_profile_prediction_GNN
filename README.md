@@ -35,17 +35,15 @@ h5py 2.8.0
 
 ## Usage
 
-### Step 1. Data download
+### Data download
 
 Download the FFPE whole slide images from GDC portal (https://portal.gdc.cancer.gov/) for colon adenocarcinoma (TCGA-COAD), rectum adenocarcinoma (TCGA-READ), and CANCER portal (https://wiki.cancerimagingarchive.net/display/Public/CPTAC-COAD) colon adenocarcinomacolon adenocarcinoma (CPTAC-COAD).
 
 Download corresponding omics data (gene mutation, cna, expression) from cBioPortal (https://www.cbioportal.org/) for each dataset.
 
-### Step 2. Data preprocessing
+### Step 1. Data preprocessing
 
 Using the code under `1. Data_preprocessing` to perform
-
-#### Data processing steps
 
 
 #### 1. Patch generation and molecular profile label preparation. 
@@ -83,7 +81,6 @@ Using the code under `1. Data_preprocessing` to perform
     ``` 
     python 4-1.generate_adj_similar.py
     ```
-
 
 
 
