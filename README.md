@@ -45,7 +45,7 @@ Download corresponding omics data (gene mutation, cna, expression) from cBioPort
 
 Using the code under `1. Data_preprocessing` to perform
 
-# Data processing steps
+## Data processing steps
 
 
 ## 1. Patch generation and molecular profile label preparation. 
