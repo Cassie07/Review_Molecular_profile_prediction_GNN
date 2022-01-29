@@ -90,7 +90,7 @@ Using the code under `1. Data_preprocessing` to perform
 
 Using the code under `2. Prediction_on_TCGA_dataset` 
 
-#### Prediction on TCGA dataset
+<!-- #### Prediction on TCGA dataset -->
 
 
 #### 1. (On TCGA-COAD) Gene mutation and CNA : model training and prediction
@@ -127,7 +127,7 @@ Using the code under `2. Prediction_on_TCGA_dataset`
 
 Using the code under `3. Validation_on_CPTAC_dataset` 
 
-#### Validation on CPTAC dataset
+<!-- #### Validation on CPTAC dataset -->
 
 
 #### 1. Validation model on CPTAC-COAD </br>【Please define the task type before run the code 】
