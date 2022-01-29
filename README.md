@@ -86,34 +86,34 @@ Using the code under `1. Data_preprocessing` to perform
 
 
 
-### Step 3. Model training for molecular profile prediction on TCGA-COAD, and validating on TCGA-READ
+### Step 2. Model training for molecular profile prediction on TCGA-COAD, and validating on TCGA-READ
 
 Using the code under `2. Prediction_on_TCGA_dataset` 
 
-# Prediction on TCGA dataset
+#### Prediction on TCGA dataset
 
 
-## 1. (On TCGA-COAD) Gene mutation and CNA : model training and prediction
+#### 1. (On TCGA-COAD) Gene mutation and CNA : model training and prediction
 * We use 10 fold cross-validation on TCGA-COAD dataset.
 
     ```
     python 1.coad_cross_validation_gene_or_cna.py.py
     ```
-## 2. (On TCGA-COAD) MSI : model training and prediction
+#### 2. (On TCGA-COAD) MSI : model training and prediction
 * We use 10 fold cross-validation on TCGA-COAD dataset.
 
     ```
     python 2.coad_cross_validation_msimss.py
     ```
     
-## 3. (On TCGA-COAD) Protein : model training and prediction
+#### 3. (On TCGA-COAD) Protein : model training and prediction
 * We use 10 fold cross-validation on TCGA-COAD dataset.
 
     ```
     python 3.coad_cross_validation_protein.py
     ```
 
-## 4. Validation model on TCGA-READ </br>【 Please define the task type before run the code 】
+#### 4. Validation model on TCGA-READ </br>【 Please define the task type before run the code 】
 
 * We train the model on TCGA-COAD dataset, and validate model on TCGA-READ datast.
 * This code could be used for all tasks, including gene mutation, CNA, MSI, and protein outcomes.
@@ -123,14 +123,14 @@ Using the code under `2. Prediction_on_TCGA_dataset`
     ```
 
 
-### Step 4. Model validation for molecular profile prediction on CPTAC-COAD
+### Step 3. Model validation for molecular profile prediction on CPTAC-COAD
 
 Using the code under `3. Validation_on_CPTAC_dataset` 
 
-# Validation on CPTAC dataset
+#### Validation on CPTAC dataset
 
 
-## 1. Validation model on CPTAC-COAD <\br>【Please define the task type before run the code 】
+#### 1. Validation model on CPTAC-COAD <\br>【Please define the task type before run the code 】
 
 * We train the model on TCGA-COAD dataset, and validate model on CPTAC-COAD datast. 
 * This code could be used for predicting gene mutation, CNA, and MSI outcomes. 
