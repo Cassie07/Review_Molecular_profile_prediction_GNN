@@ -130,7 +130,7 @@ Using the code under `3. Validation_on_CPTAC_dataset`
 #### Validation on CPTAC dataset
 
 
-#### 1. Validation model on CPTAC-COAD <\br>【Please define the task type before run the code 】
+#### 1. Validation model on CPTAC-COAD </br>【Please define the task type before run the code 】
 
 * We train the model on TCGA-COAD dataset, and validate model on CPTAC-COAD datast. 
 * This code could be used for predicting gene mutation, CNA, and MSI outcomes. 
