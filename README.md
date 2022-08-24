@@ -1,4 +1,4 @@
-# Overview of Molecualr profile prediction in colon cancer
+# Overview
 
 The code in this repository is confidential and for review purpose only. The link to access the code (anyone with the link could access the code): 
 
