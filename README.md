@@ -48,7 +48,7 @@ Download corresponding omics data (gene mutation, cna, expression) from cBioPort
 Using the code under `1. Data_preprocessing` to perform
 
 
-#### 1. Patch generation and molecular profile label preparation. 
+#### 1. Patch extraction and molecular profile label preparation. 
 * Get gene mutation, CNA, MSI, and protein information of selected slides
     ```
     python 1-1.prepare_molecular_label.py
@@ -85,7 +85,6 @@ Using the code under `1. Data_preprocessing` to perform
     ```
 
 
-
 ### Step 2. Model training for molecular profile prediction on TCGA-COAD, and validating on TCGA-READ
 
 Using the code under `2. Prediction_on_TCGA_dataset` 
@@ -99,27 +98,15 @@ Using the code under `2. Prediction_on_TCGA_dataset`
     ```
     python 1.coad_cross_validation_gene_or_cna.py.py
     ```
-#### 2. (On TCGA-COAD) MSI : model training and prediction
-* We use 10 fold cross-validation on TCGA-COAD dataset.
 
-    ```
-    python 2.coad_cross_validation_msimss.py
-    ```
-    
-#### 3. (On TCGA-COAD) Protein : model training and prediction
-* We use 10 fold cross-validation on TCGA-COAD dataset.
 
-    ```
-    python 3.coad_cross_validation_protein.py
-    ```
-
-#### 4. Validation model on TCGA-READ </br>【 Please define the task type before run the code 】
+#### 2. Validation model on TCGA-READ </br>【 Please define the task type before run the code 】
 
 * We train the model on TCGA-COAD dataset, and validate model on TCGA-READ datast.
 * This code could be used for all tasks, including gene mutation, CNA, MSI, and protein outcomes.
 
     ```
-    python 4.read_validation_all_task.py
+    python 2.read_validation_all_task.py
     ```
 
 
@@ -137,7 +124,7 @@ Using the code under `3. Validation_on_CPTAC_dataset`
 
 
     ```
-    python 1.cptac_read_validation_all_task.py
+    python 1.cptac_coad_validation_all_task.py
     ```
 
 
