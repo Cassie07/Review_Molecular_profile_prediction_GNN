@@ -8,10 +8,35 @@ This repository contains the code for the following manuscript:
 
 Spatially-aware Graph Neural Networks Enable Cross-level Molecular Profile Prediction in Colon Cancer Histopathology: A Retrospective Multicentre Cohort Study, submitted to <i>The LANCET Digital Health</i> for review.
 
+## Repo Structure
 
+```
+├── functions
+    ├── model_architecture.py
+    ├── model_utils.py
+    └── utils.py
+├── 1. Data_preprocessing
+    ├── 1-1-1.prepare_molecular_label.py
+    ├── 1-2-1.segment_tiles.py
+    ├── 1-2-2.tumor_detection.py
+    ├── 1-2-3.tumor_prediction.py
+    ├── 1-3-1.tile_normalization.py
+    ├── 1-3-2.feature_extraction.py
+    ├── 1-4-1.generate_adj_similar.py
+    └── readme.md
+├── 2. Prediction_on_TCGA_dataset
+    ├── 2-1.coad_cross_validation_all_task
+    ├── 2-2.read_validation_all_task
+    └── readme.md
+├── 3. Validation_on_CPTAC_dataset
+    ├── 3-1.cptac_coad_validation_all_task
+    ├── 2-2.read_validation_all_task
+    └── readme.md
+```
 
 ## Dependencies
 
+```
 Pytorch 1.6.0
 
 torch-geometric 1.6.1
@@ -34,6 +59,8 @@ Pillow 6.2.0
 
 h5py 2.8.0
 
+```
+
 ## Data download
 
 Download the FFPE whole slide images from GDC portal (https://portal.gdc.cancer.gov/) for colon adenocarcinoma (TCGA-COAD), rectum adenocarcinoma (TCGA-READ), and CANCER portal (https://wiki.cancerimagingarchive.net/display/Public/CPTAC-COAD) colon adenocarcinomacolon adenocarcinoma (CPTAC-COAD).
@@ -51,37 +78,37 @@ Using the code under `1. Data_preprocessing` to perform
 #### 1. Patch extraction and molecular profile label preparation. 
 * Get gene mutation, CNA, MSI, and protein information of selected slides
     ```
-    python 1-1.prepare_molecular_label.py
+    python 1-1-1.prepare_molecular_label.py
     ```
  
 #### 2. Patch extraction and selection
 * Extract patches
     ```
-    python 2-1.segment_tiles.py
+    python 1-2-1.segment_tiles.py
     ```
 * Tumor detection model training
     ```
-    python 2-2.tumor_detection.py
+    python 1-2-2.tumor_detection.py
     ```
 * Tumor patch prediction (selection by tumor detection model)
     ```
-    python 2-3.tumor_prediction.py
+    python 1-2-3.tumor_prediction.py
     ```
 
 #### 3. Color norm and feature extraction
 * Color normalization
     ``` 
-    python 3-1.tile_normalization.py
+    python 1-3-1.tile_normalization.py
     ```
 * Extract features for each patch
     ```
-    python 3-2.feature_extraction.py
+    python 1-3-2.feature_extraction.py
     ```
     
 #### 4. Graph construction
 * Generate adjacency matrix infomation (construct graph edge). For each node, we save its connected neighbor nodes.
     ``` 
-    python 4-1.generate_adj_similar.py
+    python 1-4-1.generate_adj_similar.py
     ```
 
 
@@ -96,7 +123,7 @@ Using the code under `2. Prediction_on_TCGA_dataset`
 * We use 10 fold cross-validation on TCGA-COAD dataset.
 
     ```
-    CUDA_VISIBLE_DEVICES=1,2,3,4 python 1.coad_cross_validation_all_task.py
+    CUDA_VISIBLE_DEVICES=1,2,3,4 python 2-1.coad_cross_validation_all_task.py
     ```
 
 
@@ -106,7 +133,7 @@ Using the code under `2. Prediction_on_TCGA_dataset`
 * This code could be used for all tasks, including gene mutation, CNA, MSI, and protein outcomes.
 
     ```
-    CUDA_VISIBLE_DEVICES=1,2,3,4 python 2.read_validation_all_task.py
+    CUDA_VISIBLE_DEVICES=1,2,3,4 python 2-2.read_validation_all_task.py
     ```
 
 
@@ -124,7 +151,7 @@ Using the code under `3. Validation_on_CPTAC_dataset`
 
 
     ```
-    CUDA_VISIBLE_DEVICES=1,2,3,4 python 1.cptac_coad_validation_all_task.py
+    CUDA_VISIBLE_DEVICES=1,2,3,4 python 3-1.cptac_coad_validation_all_task.py
     ```
 
 
