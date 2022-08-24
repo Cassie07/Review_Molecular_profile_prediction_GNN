@@ -95,9 +95,9 @@ Using the code under `2. Prediction_on_TCGA_dataset`
 #### 1. (On TCGA-COAD) Gene mutation and CNA : model training and prediction
 * We use 10 fold cross-validation on TCGA-COAD dataset.
 
-    '''
+    ```python
     python 1.coad_cross_validation_gene_or_cna.py.py
-    '''
+    ```
 
 
 #### 2. Validation model on TCGA-READ </br>【 Please define the task type before run the code 】
