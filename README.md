@@ -95,8 +95,8 @@ Using the code under `2. Prediction_on_TCGA_dataset`
 #### 1. (On TCGA-COAD) Gene mutation and CNA : model training and prediction
 * We use 10 fold cross-validation on TCGA-COAD dataset.
 
-    ```python
-    python 1.coad_cross_validation_gene_or_cna.py.py
+    ```
+    CUDA_VISIBLE_DEVICES=1,2,3,4 python 1.coad_cross_validation_gene_or_cna.py.py
     ```
 
 
@@ -106,7 +106,7 @@ Using the code under `2. Prediction_on_TCGA_dataset`
 * This code could be used for all tasks, including gene mutation, CNA, MSI, and protein outcomes.
 
     ```
-    python 2.read_validation_all_task.py
+    CUDA_VISIBLE_DEVICES=1,2,3,4 python 2.read_validation_all_task.py
     ```
 
 
@@ -124,7 +124,7 @@ Using the code under `3. Validation_on_CPTAC_dataset`
 
 
     ```
-    python 1.cptac_coad_validation_all_task.py
+    CUDA_VISIBLE_DEVICES=1,2,3,4 python 1.cptac_coad_validation_all_task.py
     ```
 
 
