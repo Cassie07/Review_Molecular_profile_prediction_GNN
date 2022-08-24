@@ -96,7 +96,7 @@ Using the code under `2. Prediction_on_TCGA_dataset`
 * We use 10 fold cross-validation on TCGA-COAD dataset.
 
     ```
-    CUDA_VISIBLE_DEVICES=1,2,3,4 python 1.coad_cross_validation_gene_or_cna.py.py
+    CUDA_VISIBLE_DEVICES=1,2,3,4 python 1.coad_cross_validation_all_task.py
     ```
 
 
