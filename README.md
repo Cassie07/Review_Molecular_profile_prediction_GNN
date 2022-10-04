@@ -1,8 +1,6 @@
 # Overview
 
-The code in this repository is confidential and for review purpose only. The link to access the code (anyone with the link could access the code): 
-
-The link is shared in data sharing section.
+We acknowledge that the potential variance of reproducing results could exist due to the various data preprocessing, label collection, and patch (e.g., graph node) selections.
 
 This repository contains the code for the following manuscript:
 
