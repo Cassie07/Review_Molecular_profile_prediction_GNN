@@ -94,7 +94,7 @@ Using the code under `1. Data_preprocessing` to perform
     python 1-2-3.tumor_prediction.py
     ```
 
-### 3. Color norm and feature extraction
+### 3. Color normmalization and feature extraction
 * Color normalization
     ``` 
     python 1-3-1.tile_normalization.py
