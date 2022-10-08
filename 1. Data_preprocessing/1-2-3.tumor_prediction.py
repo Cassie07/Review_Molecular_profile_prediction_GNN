@@ -54,9 +54,12 @@ class MyDataset(Dataset):
 # parameters setting
 #transform = transforms.Compose(
 #    [transforms.Resize(299),transforms.ToTensor()])
-transform = transforms.Compose([transforms.ToTensor(),
-            transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
-            ])
+
+transform = transforms.Compose([
+            transforms.Resize(224),
+            transforms.ToTensor(),
+            transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+        ])
 
 
 num_class=2
@@ -102,7 +105,7 @@ for name, child in model.named_children():
         for param in child.parameters():
             param.requires_grad = True
             #print(model)
-PATH='./epoch26-val_acc_0.9986.pt'
+PATH='./xxx.pt'
 state_dict = torch.load(PATH,map_location=torch.device('cpu'))
 new_state_dict = OrderedDict()
 for k, v in state_dict.items():
