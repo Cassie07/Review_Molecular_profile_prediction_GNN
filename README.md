@@ -4,7 +4,7 @@ We acknowledge that the potential variance of reproducing results could exist du
 
 This repository contains the code for the following manuscript:
 
-Spatially-aware Graph Neural Networks Enable Cross-level Molecular Profile Prediction in Colon Cancer Histopathology: A Retrospective Multicentre Cohort Study, submitted to <i>The LANCET Digital Health</i>.
+Spatially-aware Graph Neural Networks Enable Cross-level Molecular Profile Prediction in Colon Cancer Histopathology: A Retrospective Multicentre Cohort Study, accepted by <i>The LANCET Digital Health</i>.
 
 
 # Repo Structure
