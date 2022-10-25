@@ -38,5 +38,4 @@
     python 4-1.generate_adj_similar.py
     ```
 
-
 ```
