@@ -1,11 +1,11 @@
 # Overview
 
-We acknowledge that the potential variance of reproducing results could exist due to the various data preprocessing, label collection, and patch (e.g., graph node) selections.
-
 This repository contains the code for the following manuscript:
 
-Spatially-aware Graph Neural Networks Enable Cross-level Molecular Profile Prediction in Colon Cancer Histopathology: A Retrospective Multicentre Cohort Study, accepted by <i>The LANCET Digital Health</i>.
+Spatially-aware Graph Neural Networks and Cross-level Molecular Profile Prediction in Colon Cancer Histopathology: A Retrospective Multicentre Cohort Study, accepted by <i>The LANCET Digital Health</i>.
 
+## The pipeline and data statistics 
+![The pipeline and data statistics](https://github.com/Cassie07/Review_Molecular_profile_prediction_GNN/tree/main/Figure)
 
 # Repo Structure
 
