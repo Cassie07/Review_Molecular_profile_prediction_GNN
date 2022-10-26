@@ -10,6 +10,12 @@ This repository contains the code for the following manuscript:
 
 https://doi.org/10.1016/S2589-7500(22)00168-6
 
+### Introduction
+<p align="justify"> 
+Digital whole-slide images are a unique way to assess the spatial context of the cancer microenvironment. Exploring these spatial characteristics will enable us to better identify cross-level molecular markers that could deepen our understanding of cancer biology and related patient outcomes. In this study, we proposed a graph neural network approach that emphasises spatialisation of tumour tiles towards a comprehensive evaluation of predicting cross-level molecular profiles of genetic mutations, copy number alterations, and functional protein expressions from whole-slide images. In addition, we introduced a transformation strategy that converts whole-slide image scans into graph-structured data to address the spatial heterogeneity of colon cancer. Furthermore, we developed and assessed the performance of the model on The Cancer Genome Atlas colon adenocarcinoma [TCGA-COAD] and validated it on two external datasets (ie, The Cancer Genome Atlas rectum adenocarcinoma [TCGA-READ] and Clinical Proteomic Tumor Analysis Consortium colon adenocarcinoma [CPTAC-COAD]). We also predicted microsatellite instability and result interpretability. Finally, we showed that spatially connected graph models enable molecular profile predictions in colon cancer and are generalised to rectum cancer. After further validation, our method could be used to infer the prognostic value of multiscale molecular biomarkers and identify targeted therapies for patients with colon cancer.
+ </p>
+
+
 ### The pipeline and data statistics 
 <p align="center">
   <img src="https://github.com/Cassie07/Review_Molecular_profile_prediction_GNN/blob/main/Figure/the%20pipeline%20and%20data%20statistics.png" width="526.4" height="737.6" title="hover text">
