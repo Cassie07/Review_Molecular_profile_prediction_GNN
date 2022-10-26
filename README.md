@@ -156,6 +156,19 @@ Using the code under `3. Validation_on_CPTAC_dataset`
 # Citation
 
 ```
+@article{DING2022e787,
+title = {Spatially aware graph neural networks and cross-level molecular profile prediction in colon cancer histopathology: a retrospective multi-cohort study},
+journal = {The Lancet Digital Health},
+volume = {4},
+number = {11},
+pages = {e787-e795},
+year = {2022},
+issn = {2589-7500},
+doi = {https://doi.org/10.1016/S2589-7500(22)00168-6},
+url = {https://www.sciencedirect.com/science/article/pii/S2589750022001686},
+author = {Kexin Ding and Mu Zhou and He Wang and Shaoting Zhang and Dimitri N Metaxas}
+}
+
 ```
 
 
