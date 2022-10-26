@@ -6,7 +6,7 @@ Spatially-aware Graph Neural Networks and Cross-level Molecular Profile Predicti
 
 ## The pipeline and data statistics 
 <p align="center">
-  <img src="https://github.com/Cassie07/Review_Molecular_profile_prediction_GNN/blob/main/Figure/the%20pipeline%20and%20data%20statistics.png" width="50" height="100" title="hover text">
+  <img src="https://github.com/Cassie07/Review_Molecular_profile_prediction_GNN/blob/main/Figure/the%20pipeline%20and%20data%20statistics.png" width="526.4" height="737.6" title="hover text">
 </p>
 
 <!-- ![figure](https://github.com/Cassie07/Review_Molecular_profile_prediction_GNN/blob/main/Figure/the%20pipeline%20and%20data%20statistics.png)
