@@ -4,7 +4,7 @@ This repository contains the code for the following manuscript:
 
 Spatially-aware Graph Neural Networks and Cross-level Molecular Profile Prediction in Colon Cancer Histopathology: A Retrospective Multicentre Cohort Study, accepted by <i>The LANCET Digital Health</i>.
 
-## The pipeline and data statistics 
+### The pipeline and data statistics 
 <p align="center">
   <img src="https://github.com/Cassie07/Review_Molecular_profile_prediction_GNN/blob/main/Figure/the%20pipeline%20and%20data%20statistics.png" width="526.4" height="737.6" title="hover text">
 </p>
