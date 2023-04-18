@@ -10,6 +10,23 @@ This repository contains the code for the following manuscript:
 
 https://doi.org/10.1016/S2589-7500(22)00168-6
 
+# Citation
+
+```
+@article{DING2022e787,
+title = {Spatially aware graph neural networks and cross-level molecular profile prediction in colon cancer histopathology: a retrospective multi-cohort study},
+journal = {The Lancet Digital Health},
+volume = {4},
+number = {11},
+pages = {e787-e795},
+year = {2022},
+issn = {2589-7500},
+doi = {https://doi.org/10.1016/S2589-7500(22)00168-6},
+url = {https://www.sciencedirect.com/science/article/pii/S2589750022001686},
+author = {Kexin Ding and Mu Zhou and He Wang and Shaoting Zhang and Dimitri N Metaxas}
+}
+
+```
 ### Introduction
 <p align="justify"> 
 Digital whole-slide images are a unique way to assess the spatial context of the cancer microenvironment. Exploring these spatial characteristics will enable us to better identify cross-level molecular markers that could deepen our understanding of cancer biology and related patient outcomes. In this study, we proposed a graph neural network approach that emphasises spatialisation of tumour tiles towards a comprehensive evaluation of predicting cross-level molecular profiles of genetic mutations, copy number alterations, and functional protein expressions from whole-slide images. In addition, we introduced a transformation strategy that converts whole-slide image scans into graph-structured data to address the spatial heterogeneity of colon cancer. Furthermore, we developed and assessed the performance of the model on The Cancer Genome Atlas colon adenocarcinoma [TCGA-COAD] and validated it on two external datasets (ie, The Cancer Genome Atlas rectum adenocarcinoma [TCGA-READ] and Clinical Proteomic Tumor Analysis Consortium colon adenocarcinoma [CPTAC-COAD]). We also predicted microsatellite instability and result interpretability. Finally, we showed that spatially connected graph models enable molecular profile predictions in colon cancer and are generalised to rectum cancer. After further validation, our method could be used to infer the prognostic value of multiscale molecular biomarkers and identify targeted therapies for patients with colon cancer.
@@ -169,22 +186,6 @@ Using the code under `3. Validation_on_CPTAC_dataset`
     CUDA_VISIBLE_DEVICES=1,2,3,4 python 3-1.cptac_coad_validation_all_task.py
     ```
     
-# Citation
 
-```
-@article{DING2022e787,
-title = {Spatially aware graph neural networks and cross-level molecular profile prediction in colon cancer histopathology: a retrospective multi-cohort study},
-journal = {The Lancet Digital Health},
-volume = {4},
-number = {11},
-pages = {e787-e795},
-year = {2022},
-issn = {2589-7500},
-doi = {https://doi.org/10.1016/S2589-7500(22)00168-6},
-url = {https://www.sciencedirect.com/science/article/pii/S2589750022001686},
-author = {Kexin Ding and Mu Zhou and He Wang and Shaoting Zhang and Dimitri N Metaxas}
-}
-
-```
 
 
