@@ -26,6 +26,15 @@ url = {https://www.sciencedirect.com/science/article/pii/S2589750022001686},
 author = {Kexin Ding and Mu Zhou and He Wang and Shaoting Zhang and Dimitri N Metaxas}
 }
 
+@inproceedings{ding2020feature,
+  title={Feature-enhanced graph networks for genetic mutational prediction using histopathological images in colon cancer},
+  author={Ding, Kexin and Liu, Qiao and Lee, Edward and Zhou, Mu and Lu, Aidong and Zhang, Shaoting},
+  booktitle={Medical Image Computing and Computer Assisted Intervention--MICCAI 2020: 23rd International Conference, Lima, Peru, October 4--8, 2020, Proceedings, Part II 23},
+  pages={294--304},
+  year={2020},
+  organization={Springer}
+}
+
 ```
 ### Introduction
 <p align="justify"> 
